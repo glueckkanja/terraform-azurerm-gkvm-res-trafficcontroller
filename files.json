@@ -29,8 +29,8 @@
       "target": ".terraform-docs.yml"
     },
     {
-      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/makefile",
-      "target": "makefile"
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/Makefile",
+      "target": "Makefile"
     },
     {
       "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/_footer.md",
