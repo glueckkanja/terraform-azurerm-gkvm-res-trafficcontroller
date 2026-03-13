@@ -1,11 +1,56 @@
 {
   "copy": [
     {
-      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/SECURITY.md",
-      "target": "__testfile.txt"
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/avm.bat",
+      "target": "avm.bat"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/avm.ps1",
+      "target": "avm.ps1"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/avm",
+      "target": "avm"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/.editorconfig",
+      "target": ".editorconfig"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/.gitattributes",
+      "target": ".gitattributes"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/.gitignore",
+      "target": ".gitignore"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/.terraform-docs.yml",
+      "target": ".terraform-docs.yml"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/makefile",
+      "target": "makefile"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/_footer.md",
+      "target": "_footer.md"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/_header.md",
+      "target": "_header.md"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/.vscode/extensions.json",
+      "target": ".vscode/extensions.json"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/.vscode/settings.json",
+      "target": ".vscode/settings.json"
     }
   ],
   "protected": [
-    "requirements.txt", "files.json"
+    "requirements.txt",
+    "files.json"
   ]
 }
