@@ -1,0 +1,11 @@
+{
+  "copy": [
+    {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/SECURITY.md",
+      "target": "__testfile.txt"
+    }
+  ],
+  "protected": [
+    "requirements.txt", "files.json"
+  ]
+}

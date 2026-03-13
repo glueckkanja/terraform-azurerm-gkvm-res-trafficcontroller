@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "generated": "2026-03-13T13:51:13.002Z",
+  "actions": {
+    "actions/checkout": [
+      {
+        "version": "de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "sha": "de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "integrity": "sha256-c744527bfafdf73cf1bf8a83a3ace81c46e36d03e6ed952fa9d93683adabab4d",
+        "dependencies": []
+      }
+    ],
+    "gjtorikian/gh-actions-lockfile": [
+      {
+        "version": "24be31e941fc36df78f82762cd45c28b4cbcaedd",
+        "sha": "24be31e941fc36df78f82762cd45c28b4cbcaedd",
+        "integrity": "sha256-6a3612083812bfbf22ef48e284a93dbf82766dea50126f85d2160ae092018087",
+        "dependencies": []
+      }
+    ],
+    "actions/setup-python": [
+      {
+        "version": "a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "sha": "a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "integrity": "sha256-c301e18428dae6a8e11ed3c629dd92a23e8289ce0897f01b7a6705620f2af7f8",
+        "dependencies": []
+      }
+    ]
+  }
+}
