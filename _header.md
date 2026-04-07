@@ -1,3 +1,3 @@
-# terraform-azurerm-gkvm-res-trafficcontroller
+# terraform-azurerm-avm-template
 
-Terraform module to deploy Azure Application Gateway for Containers (Traffic Controller) using the AzAPI provider.
+This is a template repo for Terraform Azure Verified Modules.
