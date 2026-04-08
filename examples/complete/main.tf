@@ -13,6 +13,7 @@ provider "azapi" {}
 
 ## Section to provide a random Azure region for the resource group
 locals {
+  location = local.supported_regions[random_integer.region_index.result]
   supported_regions = [
     "australiaeast", "centralus", "eastasia", "eastus", "eastus2",
     "northcentralus", "northeurope", "southcentralus", "southeastasia",
@@ -21,7 +22,6 @@ locals {
     "swedencentral", "norwayeast", "koreacentral", "francecentral",
     "canadacentral", "germanywestcentral", "centralindia",
   ]
-  location = local.supported_regions[random_integer.region_index.result]
 }
 
 resource "random_integer" "region_index" {

@@ -19,23 +19,26 @@ terraform {
 provider "azapi" {}
 
 ## Section to provide a random Azure region for the resource group
-module "regions" {
-  source  = "Azure/avm-utl-regions/azurerm"
-  version = "0.3.0"
+locals {
+  location = local.supported_regions[random_integer.region_index.result]
+  supported_regions = [
+    "australiaeast", "centralus", "eastasia", "eastus", "eastus2",
+    "northcentralus", "northeurope", "southcentralus", "southeastasia",
+    "uksouth", "westus", "westeurope", "uaenorth", "westus3",
+    "brazilsouth", "westus2", "japaneast", "switzerlandnorth",
+    "swedencentral", "norwayeast", "koreacentral", "francecentral",
+    "canadacentral", "germanywestcentral", "centralindia",
+  ]
 }
 
 resource "random_integer" "region_index" {
-  max = length(module.regions.regions_by_name) - 1
+  max = length(local.supported_regions) - 1
   min = 0
 }
 
 module "naming" {
   source  = "Azure/naming/azurerm"
   version = "0.4.2"
-}
-
-locals {
-  location = module.regions.regions_by_name[keys(module.regions.regions_by_name)[random_integer.region_index.result]].name
 }
 
 resource "azapi_resource" "rg" {
@@ -181,12 +184,6 @@ The following Modules are called:
 Source: Azure/naming/azurerm
 
 Version: 0.4.2
-
-### <a name="module_regions"></a> [regions](#module\_regions)
-
-Source: Azure/avm-utl-regions/azurerm
-
-Version: 0.3.0
 
 ### <a name="module_traffic_controller"></a> [traffic\_controller](#module\_traffic\_controller)
 
