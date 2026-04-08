@@ -1,7 +1,15 @@
 {
   "version": 1,
-  "generated": "2026-03-13T13:51:13.002Z",
+  "generated": "2026-04-08T12:12:59.968Z",
   "actions": {
+    "googleapis/release-please-action": [
+      {
+        "version": "16a9c90856f42705d54a6fda1823352bdc62cf38",
+        "sha": "16a9c90856f42705d54a6fda1823352bdc62cf38",
+        "integrity": "sha256-f36976025f4983224397b92691afc9b00eab2a51cffdb58d6fb481a8be52e016",
+        "dependencies": []
+      }
+    ],
     "actions/checkout": [
       {
         "version": "de0fac2e4500dabe0009e67214ff5f5447ce83dd",

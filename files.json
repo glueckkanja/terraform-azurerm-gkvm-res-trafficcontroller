@@ -29,6 +29,10 @@
       "target": ".terraform-docs.yml"
     },
     {
+      "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/LICENSE",
+      "target": "LICENSE"
+    },
+    {
       "source": "https://raw.githubusercontent.com/Azure/terraform-azurerm-avm-template/refs/heads/main/Makefile",
       "target": "Makefile"
     },
