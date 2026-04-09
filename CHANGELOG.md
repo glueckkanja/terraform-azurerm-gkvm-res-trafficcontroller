@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/glueckkanja/terraform-azurerm-gkvm-res-trafficcontroller/compare/v0.2.1...v0.2.2) (2026-04-09)
+
+
+### Bug Fixes
+
+* update resource group reference to use parent_id instead of name ([87d9672](https://github.com/glueckkanja/terraform-azurerm-gkvm-res-trafficcontroller/commit/87d9672f5ae73b940c9187db6a4a58beeda7b43c))
+
 ## [0.2.1](https://github.com/glueckkanja/terraform-azurerm-gkvm-res-trafficcontroller/compare/v0.2.0...v0.2.1) (2026-04-08)
 
 
