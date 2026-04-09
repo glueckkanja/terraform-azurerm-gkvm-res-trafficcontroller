@@ -19,10 +19,10 @@ DESCRIPTION
   }
 }
 
-variable "resource_group_name" {
+variable "parent_id" {
   type        = string
   description = <<DESCRIPTION
-The name of the resource group in which to create the Application Gateway for Containers.
+The resource ID of the resource group in which to create the Application Gateway for Containers.
 DESCRIPTION
   nullable    = false
 }

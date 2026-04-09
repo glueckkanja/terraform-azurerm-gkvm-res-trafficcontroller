@@ -109,9 +109,9 @@ resource "azapi_resource" "waf_policy" {
 module "traffic_controller" {
   source = "../.."
 
-  location            = local.location
-  name                = module.naming.application_gateway.name_unique
-  resource_group_name = azapi_resource.rg.name
+  location  = local.location
+  name      = module.naming.application_gateway.name_unique
+  parent_id = azapi_resource.rg.id
   associations = {
     subnet1 = {
       name      = "assoc-subnet1"

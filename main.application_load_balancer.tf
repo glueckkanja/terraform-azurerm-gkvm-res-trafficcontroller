@@ -1,7 +1,7 @@
 resource "azapi_resource" "traffic_controller" {
   location  = var.location
   name      = var.name
-  parent_id = local.resource_group_id
+  parent_id = var.parent_id
   type      = "Microsoft.ServiceNetworking/trafficControllers@${var.api_version}"
   body = {
     properties = var.security_policy_configurations != null ? {
